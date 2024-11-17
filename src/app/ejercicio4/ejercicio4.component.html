@@ -1,1 +1,22 @@
-<p>ejercicio4 works!</p>
+<div class="ejercicio4">
+    <h2>Ejercicio 4: Cuadrado y mitad de los números entre 15 y 70</h2>
+    <button (click)="calcularCuadradoYMitad()">Calcular Cuadrado y Mitad</button>
+
+    <table *ngIf="mostrarResultados">
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Cuadrado</th>
+          <th>Mitad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of numeros">
+          <td>{{ item.numero }}</td>
+          <td>{{ item.cuadrado }}</td>
+          <td>{{ item.mitad }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
