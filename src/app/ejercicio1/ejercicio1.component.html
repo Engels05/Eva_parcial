@@ -1,1 +1,27 @@
-<p>ejercicio1 works!</p>
+<mat-toolbar color="primary">
+    <span>Ejercicio 01: Calcular Utilidades</span>
+  </mat-toolbar>
+  
+  <div class="container">
+    <mat-card>
+      <mat-card-title>Datos:</mat-card-title>
+      <mat-card-content>
+        <p>Salario Mensual: <strong>{{ salario | currency: "S/. " }}</strong></p>
+        <p>Años de Trabajo: <strong>{{ anios }}</strong></p>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="calcularUtilidades()">
+          Calcular
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <mat-card class="resultado" *ngIf="resultado">
+      <mat-card-title>Resultado</mat-card-title>
+      <mat-card-content>
+        <p>La utilidad es de: <strong>{{ utilidades | currency: "S/. " }}</strong></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

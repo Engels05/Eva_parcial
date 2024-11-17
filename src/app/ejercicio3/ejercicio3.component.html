@@ -1,1 +1,31 @@
-<p>ejercicio3 works!</p>
+<mat-toolbar color="primary">
+  <span>Ejercicio 03: Calculador de costo de matrícula</span>
+</mat-toolbar>
+
+<div class="container">
+  <mat-card>
+    <mat-card-title>Datos de la Matrícula</mat-card-title>
+    <mat-card-content>
+      <label for="materias">Número de materias:</label>
+      <input 
+        id="materias" 
+        type="number" 
+        (input)="actualizarNumeroMaterias($event)" 
+        min="0" 
+        placeholder="Ingrese el número de materias">
+      <p>Costo por materia: <strong>{{ costoMateria | currency: 'S/. ' }}</strong></p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="calcularMatricula()">Calcular</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card *ngIf="resultado" class="resultado">
+    <mat-card-title>Resultado</mat-card-title>
+    <mat-card-content>
+      <p>Total a pagar: <strong>{{ total | currency: 'S/. ' }}</strong></p>
+      <p>Descuento aplicado: <strong>{{ descuento | percent }}</strong></p>
+    </mat-card-content>
+  </mat-card>
+</div>
