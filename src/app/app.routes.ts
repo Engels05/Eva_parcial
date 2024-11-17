@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+<<<<<<< HEAD
 import { Ejercicio1Component } from './ejercicio1/ejercicio1.component';
 import { Ejercicio2Component } from './ejercicio2/ejercicio2.component';
 import { Ejercicio3Component } from './ejercicio3/ejercicio3.component';
@@ -10,3 +11,7 @@ export const routes: Routes = [
   { path: 'ejercicio3', component: Ejercicio3Component },
   { path: 'ejercicio4', component: Ejercicio4Component },
 ];
+=======
+
+export const routes: Routes = [];
+>>>>>>> 868ad05c0959f7e1228cc05459b2032502310138

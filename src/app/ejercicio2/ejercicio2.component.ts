@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -25,4 +26,17 @@ export class Ejercicio2Component implements OnInit {
   calcularMayor(): void {
     this.numeroMayor = Math.max(...this.numeros);
   }
+=======
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-ejercicio2',
+  standalone: true,
+  imports: [],
+  templateUrl: './ejercicio2.component.html',
+  styleUrl: './ejercicio2.component.css'
+})
+export class Ejercicio2Component {
+
+>>>>>>> 868ad05c0959f7e1228cc05459b2032502310138
 }
