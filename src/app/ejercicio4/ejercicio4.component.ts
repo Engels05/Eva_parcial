@@ -6,14 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./ejercicio4.component.css']
 })
 export class Ejercicio4Component {
-  // Array para almacenar los resultados
   numeros: { numero: number, cuadrado: number, mitad: number }[] = [];
-  mostrarResultados: boolean = false; // Para controlar la visibilidad de los resultados
-
-  // Función que calcula el cuadrado y la mitad de los números entre 15 y 70
+  mostrarResultados: boolean = false; 
   calcularCuadradoYMitad(): void {
-    console.log('Calculando los resultados...');  // Agregamos un console.log para verificar que se ejecuta
-    this.numeros = []; // Limpiar el array cada vez que se calcula
+    console.log('Calculando los resultados...'); 
+    this.numeros = []; 
     for (let i = 15; i <= 70; i++) {
       let cuadrado = i * i;
       let mitad = i / 2;
